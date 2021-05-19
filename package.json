@@ -1,0 +1,26 @@
+{
+  "name": "telegram-chores-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot to manager your chores",
+  "main": "index.js",
+  "repository": {
+    "url": "kekw.com"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "dotenv": "^9.0.2",
+    "signale": "^1.4.0",
+    "telegraf": "^4.3.0",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^15.3.0",
+    "@types/signale": "^1.4.1"
+  }
+}
