@@ -1,4 +1,9 @@
-# Telegram Chores APP
+# Telegram Chores App
+
+## What It Does
+* Allows a user to access a chore like (TODO App)
+* Allows a user to schedule chores to add at fixed intervals (e.g. every 6 months add "Visit Dentist" chore)
+* Allows admin to see chores/schedules for a user via an API
 
 ## Getting Started
 
@@ -34,3 +39,9 @@ Debugging is done via the VSCode debugger. Run the `Debug App` configuration whi
 Alternately you can use the shortcut `F5` on the keyboard to start the debugging process
 
 For more info see the contents inside `.vscode`
+
+## TODOs
+
+* Create basic chores functionality (CRUD for chores)
+* Define and Create scheduling engine
+* CI/CD using Github Actions
