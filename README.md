@@ -21,6 +21,12 @@ Fields that are flagged as compulsory are defined inside `environment.ts`, and w
 
 Intellisense is provided via the `environment.ts` file.
 
+### Installing Dependencies
+
+Run `npm install` to install the dependencies defined in `package.json`
+
+Note that `package-lock.json` is not being used in the project
+
 ### Debugging
 
 Debugging is done via the VSCode debugger. Run the `Debug App` configuration which is defined in `.vscode/launch.json` using the "Run and Debug" menu option on the left.
