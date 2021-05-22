@@ -1,25 +1,24 @@
 import { DataTypes, Model, ModelCtor, Optional, Sequelize } from 'sequelize/types'
-import { SequelizeAttributes } from "../typings/SequelizeAttributes";
+import { SequelizeAttributes } from "../../../typings/SequelizeAttributes";
 import { v4 as uuidv4 } from 'uuid';
 
 export interface IUserAttributes {
-  id: string
+  telegramId: number // use the telegramId
   username: string
   createdAt: Date
 }
 
 // id and doneAt are optional parameters during chore instance creation
-interface IUserCreationAttributes extends Optional<IUserAttributes, 'id'> {}
+interface IUserCreationAttributes {}
 
 interface IUserInstance extends Model<IUserAttributes, IUserCreationAttributes>, IUserAttributes {}
 
 export const UserFactory = (sequelize: Sequelize, dataTypes: typeof DataTypes): ModelCtor<IUserInstance> => {
   const attributes: SequelizeAttributes<IUserAttributes> = {
-    id: {
-      type: dataTypes.UUIDV4,
+    telegramId: {
+      type: dataTypes.NUMBER,
       primaryKey: true,
-      allowNull: false,
-      defaultValue: () => uuidv4()
+      allowNull: false
     },
     username: {
       type: dataTypes.STRING,

@@ -1,5 +1,5 @@
 import { DataTypes, Model, ModelCtor, Optional, Sequelize } from 'sequelize/types'
-import { SequelizeAttributes } from "../typings/SequelizeAttributes";
+import { SequelizeAttributes } from "../../../typings/SequelizeAttributes";
 import { v4 as uuidv4 } from 'uuid';
 
 export interface IScheduleAttributes {
